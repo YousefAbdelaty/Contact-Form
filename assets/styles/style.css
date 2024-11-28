@@ -18,7 +18,7 @@
     border-radius: 10px;
     padding: 3% 0;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
     
 } 
@@ -97,22 +97,6 @@
 
 /* Media queries */
 
-@media only screen and (max-width:1400px){
-
-    .container .mapWrapper iframe{
-         /* height: 55vh; */
-  }
-
-}
-@media only screen and (max-width:1200px){
-    
-    .container .mapWrapper iframe{
-        
-        /* height: 55vh; */
-    }
-    
-}
-
 
 
 @media only screen and (max-width:992px){
@@ -121,29 +105,26 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
-        max-width:65vw;
-        max-height:120vh ;
+        max-width:75vw;
+        max-height:150vh ;
         padding-top: 1rem;
         gap: 3rem;
     }
     
-    .container .mapWrapper iframe{
-        width: 50vw;
-        height: 50vh;
+   .container .mapWrapper iframe{
+        height: 60vh;
+        width: 55vw;
     }
     
     .container .formWrapper h1{
-        font-size: 1.7rem;
-        
-        margin: 3vh auto 3vh auto ;
+        font-size: 2rem;
+        margin: 5vh auto 6vh auto ;
     }
     
     .container .formWrapper {
-        width: 45vw;
+        width: 55vw;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
         
     }
@@ -153,58 +134,36 @@
 
 @media only screen and (max-width:768px){
 
-    .container .mapWrapper iframe{
-  
-        height: 42vh;
+    .container{
+        max-width:90vw;
+        max-height: 150vh;  
     }
 
     .formWrapper form textarea {
         
-        height: 5rem;
-        
+        height: 5rem;  
     }
 
-    .container .formWrapper input ,
-    .container .formWrapper button {
-
-        padding: 10px;
+    
+    .container .formWrapper{
+        width: 65vw;
     }
 
-     .container .formWrapper h1{
-        font-size: 1.5rem;
-        
+    .container .mapWrapper iframe{
+        height: 60vh;
+        width: 65vw;
     }
+     
 
 }
 
 
 @media only screen and (max-width:576px){
 
-    .container{
-        max-height: 90vh;
-    }
-
-    .container .mapWrapper iframe{
-        height: 34vh;
-    }
-
     .formWrapper form textarea {
         
         height: 2rem;
-        
     }
 
-    .container .formWrapper input ,
-    .container .formWrapper button {
-
-        padding: 5px;
-    }
-
-    .container .formWrapper h1{
-        font-size: 1.2rem;
-      
-        
-    }
-   
-
+ 
 }
