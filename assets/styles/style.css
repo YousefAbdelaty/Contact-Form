@@ -1,0 +1,210 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #ffffff;
+}
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width:70vw;
+    max-height:70vh ;
+    /* margin:15rem 10rem 0 10rem; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 3% 0;
+    margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    
+} 
+
+.formWrapper form textarea {
+  resize: none;
+  height: 8rem;
+  padding: 10px;
+}
+
+.formWrapper form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    /* width:100%; */
+   
+    
+}
+
+.container .formWrapper{
+    width: 30vw;
+    /* margin-left: 2vw; */
+}
+
+
+
+.formWrapper form input,
+.formWrapper form button{
+    padding: 13px;
+}
+.formWrapper form button{
+    color: white;
+    background-color: #34495E;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+    
+
+.formWrapper form button:hover{
+    color: #34495E;
+    background-color:  white;
+    transition: all 0.3s ease-in-out;
+}
+
+.formWrapper form input,
+.formWrapper form textarea,
+.formWrapper form button{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+    
+}
+
+.formWrapper h1{
+    margin: 0 0 10% 2rem;
+    color: #34495E;
+    font-size: 2rem;
+}
+
+
+.container .mapWrapper iframe{
+    /* flex-basis: 50%; */
+    border-radius:10px ;
+    width: 30vw;
+    height: 65vh;
+    /* margin-right: 2vw; */
+}
+
+
+
+
+
+/* Media queries */
+
+@media only screen and (max-width:1400px){
+
+    .container .mapWrapper iframe{
+         /* height: 55vh; */
+  }
+
+}
+@media only screen and (max-width:1200px){
+    
+    .container .mapWrapper iframe{
+        
+        /* height: 55vh; */
+    }
+    
+}
+
+
+
+@media only screen and (max-width:992px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        max-width:45vw;
+        max-height:120vh ;
+        padding-top: 1rem;
+        gap: 3rem;
+    }
+    
+    .container .mapWrapper iframe{
+        width: 40vw;
+        height: 50vh;
+    }
+    
+    .container .formWrapper h1{
+        font-size: 1.7rem;
+        
+        margin: 2vh auto ;
+    }
+    
+    .container .formWrapper {
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        
+    }
+    
+    
+}
+
+@media only screen and (max-width:768px){
+
+    .container .mapWrapper iframe{
+  
+        height: 42vh;
+    }
+
+    .formWrapper form textarea {
+        
+        height: 5rem;
+        
+    }
+
+    .container .formWrapper input ,
+    .container .formWrapper button {
+
+        padding: 10px;
+    }
+
+     .container .formWrapper h1{
+        font-size: 1.5rem;
+        
+    }
+
+}
+
+
+@media only screen and (max-width:576px){
+
+    .container{
+        max-height: 90vh;
+    }
+
+    .container .mapWrapper iframe{
+        height: 34vh;
+    }
+
+    .formWrapper form textarea {
+        
+        height: 2rem;
+        
+    }
+
+    .container .formWrapper input ,
+    .container .formWrapper button {
+
+        padding: 5px;
+    }
+
+    .container .formWrapper h1{
+        font-size: 1.2rem;
+      
+        
+    }
+   
+
+}
